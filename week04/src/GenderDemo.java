@@ -2,9 +2,8 @@ import java.util.Scanner;
 
 public class GenderDemo {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Input ssn number(13 digits) : ");
-        String socialSecurityNumber = scanner.nextLine();
+
+        String socialSecurityNumber = args[0];
 
         char gender = socialSecurityNumber.charAt(6);
 

@@ -9,6 +9,24 @@ public class Pokemon {
     private int level;
     private int hp;
 
+
+    // constructor
+
+
+    public Pokemon(String name, int level, int hp) {
+        this.name = name;
+        this.level = level;
+        this.hp = hp;
+    }
+    public Pokemon(String name) {
+//        this.name = name;
+        this(name, 1, 50); //name만 넣으면 기본값이 1과 5로 지정됨
+    }
+
+    public Pokemon() {
+    }
+
+    // getter & setter methods
     public int getLevel() {
         return level;
     }
