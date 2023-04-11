@@ -11,8 +11,7 @@ public class PokemonGame {
         charizard.setLevel(36);
 
         charizard.evolve();
-        charizard.attack();
         pikachu.evolve();
-        pikachu.attack();
+        pikachu.attack(charizard);
     }
 }
