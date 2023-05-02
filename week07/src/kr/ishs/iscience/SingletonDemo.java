@@ -1,12 +1,17 @@
 package kr.ishs.iscience;
 
 class  Singleton{
+    private static Singleton s = new Singleton();
     private Singleton(){
-        System.out.println("단 하나의 객체!");
+        System.out.println("One Object Created!");
+    }
+
+    public static Singleton getInstance() {
+        return s;
     }
 }
 public class SingletonDemo {
     public static void main(String[] args) {
-        Singleton s = new Singleton();
+        System.out.println(Singleton.getInstance().toString());
     }
 }
