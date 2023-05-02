@@ -10,10 +10,7 @@ class  Singleton{
         return s;
     }
 
-    @Override
-    public String toString() {
-        return "Singleton Pattern Object";
-    }
+
 }
 public class SingletonDemo {
     public static void main(String[] args) {
