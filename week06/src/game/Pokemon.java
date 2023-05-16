@@ -56,8 +56,6 @@ public class Pokemon {
         this.name = name;
     }
 
-
-
     // methods
     void evolve(){
         level = level + 1;
