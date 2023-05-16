@@ -15,5 +15,9 @@ public class PokemonGame {
         System.out.println(squirtle.getHp());
         System.out.println(pikachu.getHp());
         System.out.println(pikachu.getName());
+
+        pikachu.attack(); //execute override method
+        squirtle.attack(); //execute override method
+        charizard.attack(); //execute override method
     }
 }

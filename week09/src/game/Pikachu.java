@@ -12,4 +12,10 @@ public class Pikachu extends Pokemon{
         this.setLevel(level);
         this.setName("pikachu");
     }
+
+    @Override
+    void attack() {
+        super.attack();
+        //System.out.println(this.getName() + " does a wide area attack"); //이 부분은 부모 특성에서 추가되어 실행됨
+    }
 }

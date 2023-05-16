@@ -13,4 +13,9 @@ public class Charizard extends Pokemon{
         this.setLevel(level);
         this.setName("charizard");
     }
+
+    @Override
+    void attack() {
+        System.out.println(this.getName() + " does a wide area flamethrower attack");
+    }
 }

@@ -28,4 +28,8 @@ public class Pokemon {
     public void setName(String name) {
         this.name = name;
     }
+
+    void attack(){
+        System.out.println(this.name + " does a wide area attack");
+    }
 }
