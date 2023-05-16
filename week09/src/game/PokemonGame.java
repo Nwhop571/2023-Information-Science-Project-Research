@@ -1,6 +1,6 @@
 package game;
 
-public class PokemonGame {
+public class PokemonGame {     //Pokemon.java안에 protected의 특성상 같은 패키지 안에서는 접근가능, extends가 없기 때문에 타 패키지에서 접근불가
     public static void main(String[] args) {
         Charizard charizard = new Charizard();
         Pikachu pikachu = new Pikachu(14, 165);
