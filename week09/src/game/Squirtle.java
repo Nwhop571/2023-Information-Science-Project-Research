@@ -2,19 +2,19 @@ package game;
 
 public class Squirtle extends Pokemon{
     public Squirtle(){
-        this.setHp(44);
-        this.setLevel(1);
-        this.setName("squirtle");
+        this.hp = 44;
+        this.level = 1;
+        this.name = "squirtle";
     }
     public Squirtle(int level, int hp){
         super();
-        this.setHp(hp);
-        this.setLevel(level);
-        this.setName("squirtle");
+        this.hp = hp;
+        this.level = level;
+        this.name = "squirtle";
     }
 
     @Override
     void attack() {
-        System.out.println(this.getName() + " does a wide area water cannon attack");
+        System.out.println(this.name + " does a wide area water cannon attack");
     }
 }

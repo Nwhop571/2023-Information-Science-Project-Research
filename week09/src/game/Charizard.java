@@ -3,19 +3,19 @@ package game;
 public class Charizard extends Pokemon{
 
     public Charizard() {
-        this.setHp(78);
-        this.setLevel(36);
-        this.setName("charizard");
+        this.hp = 78;
+        this.level = 36;
+        this.name = "charizard";
     }
     public Charizard(int level, int hp){
         super();
-        this.setHp(hp);
-        this.setLevel(level);
-        this.setName("charizard");
+        this.hp = hp;
+        this.level = level;
+        this.name = "charizard";
     }
 
     @Override
     void attack() {
-        System.out.println(this.getName() + " does a wide area flamethrower attack");
+        System.out.println(this.name + " does a wide area flamethrower attack");
     }
 }

@@ -5,16 +5,16 @@ public class PokemonGame {
         Charizard charizard = new Charizard();
         Pikachu pikachu = new Pikachu(14, 165);
         Squirtle squirtle = new Squirtle();
-        squirtle.setLevel(1);
-        squirtle.setHp(100);
+        squirtle.level = 1;
+        squirtle.hp = 100;
 
-        System.out.println(charizard.getName());
-        charizard.setName("리자몽");
-        System.out.println(charizard.getName());
+        System.out.println(charizard.name);
+        charizard.name = "리자몽";
+        System.out.println(charizard.name);
 
-        System.out.println(squirtle.getHp());
-        System.out.println(pikachu.getHp());
-        System.out.println(pikachu.getName());
+        System.out.println(squirtle.hp);
+        System.out.println(pikachu.hp);
+        System.out.println(pikachu.name);
 
         pikachu.attack(); //execute override method
         squirtle.attack(); //execute override method

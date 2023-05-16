@@ -2,20 +2,20 @@ package game;
 
 public class Pikachu extends Pokemon{
     public Pikachu(){
-        this.setHp(35);
-        this.setLevel(1);
-        this.setName("pikachu");
+        this.hp = 35;     // protected access (without setter)
+        this.level = 1;
+        this.name = "pikachu";
     }
     public Pikachu(int level, int hp){
         super();
-        this.setHp(hp);
-        this.setLevel(level);
-        this.setName("pikachu");
+        this.hp = hp;
+        this.level = level;
+        this.name = "pikachu";
     }
 
     @Override
     void attack() {
         super.attack();
-        //System.out.println(this.getName() + " does a wide area attack"); //이 부분은 부모 특성에서 추가되어 실행됨
+        //System.out.println(this.name + " does a wide area attack"); //이 부분은 부모 특성에서 추가되어 실행됨
     }
 }
