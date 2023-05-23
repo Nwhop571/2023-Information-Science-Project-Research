@@ -1,5 +1,5 @@
 package game;
 
 public interface FlyBehavior {
-    void fly();
+    void fly();  // public abstract void fly();
 }

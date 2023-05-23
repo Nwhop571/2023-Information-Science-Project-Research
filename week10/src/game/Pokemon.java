@@ -7,7 +7,7 @@ public abstract class Pokemon {  // 이 클래스의 객체를 만들지 못한�
 
 
 
-    FlyBehavior flyable;
+    FlyBehavior flyable;  // assaciation
 
     public void setFlyable(FlyBehavior flyable) {
         this.flyable = flyable;
