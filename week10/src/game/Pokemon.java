@@ -5,6 +5,19 @@ public abstract class Pokemon {  // 이 클래스의 객체를 만들지 못한�
     protected int hp;
     protected String name;
 
+
+
+    FlyBehavior flyable;
+
+    public void setFlyable(FlyBehavior flyable) {
+        this.flyable = flyable;
+    }
+
+    public void performFly(){
+        System.out.print(this.name + " ");
+        this.flyable.fly();
+    }
+
     public int getLevel() {
         return level;
     }
