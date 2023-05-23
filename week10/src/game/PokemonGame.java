@@ -4,6 +4,7 @@ public class PokemonGame {     //Pokemon.java안에 protected의 특성상 같�
     public static void main(String[] args) {
         Pikachu pikachu1 = new Pikachu(14, 165);
         pikachu1.electricInfo();
+        //Pikachu pikachu3 = new Squirtle();
 
         System.out.println(pikachu1);
 
@@ -13,6 +14,7 @@ public class PokemonGame {     //Pokemon.java안에 protected의 특성상 같�
         System.out.println(pokemon);
 
         Pikachu pikachu2 = (Pikachu) pokemon;  // downcast
+        Squirtle squirtle1 = (Squirtle) pokemon;
         pikachu2.electricInfo();  // accessible
 
         System.out.println(pikachu2);  // same address (pokemon)
