@@ -1,6 +1,6 @@
 package game;
 
-public class Pokemon {
+public abstract class Pokemon {  // 이 클래스의 객체를 만들지 못한다.
     protected int level;
     protected int hp;
     protected String name;
@@ -29,12 +29,10 @@ public class Pokemon {
         this.name = name;
     }
 
-    public void attack(){
-        System.out.println(this.name + " does a wide area attack");
-    }
+    public abstract void attack();
 
     public void attack(Pokemon targetPokemon){
-        if (targetPokemon instanceof Pikachu){
+        if (this instanceof Pikachu){
             System.out.println("pika pika~!");
         }
         System.out.println(this.name + " does a attack to " + targetPokemon.name);

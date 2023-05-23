@@ -35,5 +35,7 @@ public class PokemonGame {     //Pokemon.java안에 protected의 특성상 같�
         //pikachu1.attack(trainer1);  // incompatible
 
         charizard.attack(pikachu1);
+
+        //Pokemon pokemon2 = new Pokemon();  // 할 수 없다.
     }
 }
