@@ -1,12 +1,13 @@
 package game;
 
-public class Squirtle extends Pokemon{
-    public Squirtle(){
+public class Squirtle extends Pokemon {
+    public Squirtle() {
         this.hp = 44;
         this.level = 1;
         this.name = "squirtle";
     }
-    public Squirtle(int level, int hp){
+
+    public Squirtle(int level, int hp) {
         super();
         this.hp = hp;
         this.level = level;
@@ -15,9 +16,10 @@ public class Squirtle extends Pokemon{
 
     @Override
     public void attack() {
-        System.out.println(this.name + " does a wide area water cannon attack");
+        System.out.println(this.name + " does a wide area Water Cannon attack");
     }
-    void attack() {
-        System.out.println(this.name + " does a wide area water cannon attack");
+
+    void waterInfo(){
+        System.out.println("water...");
     }
 }

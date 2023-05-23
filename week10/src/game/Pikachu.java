@@ -16,4 +16,10 @@ public class Pikachu extends Pokemon{
     void electricInfo(){
         System.out.println("전기 속성!");
     }
+
+    @Override
+    public void attack() {
+        //super.attack();
+        System.out.println(this.name + " does a wide area Electric attack");
+    }
 }
