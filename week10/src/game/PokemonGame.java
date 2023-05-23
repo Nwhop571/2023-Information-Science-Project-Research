@@ -12,9 +12,12 @@ public class PokemonGame {     //Pokemon.java안에 protected의 특성상 같�
 
         System.out.println(pokemon);
 
-        Pikachu pikachu2 = (Pikachu) pokemon;
-        pikachu2.electricInfo();
+        Pikachu pikachu2 = (Pikachu) pokemon;  // downcast
+        pikachu2.electricInfo();  // accessible
 
-        System.out.println(pikachu2);
+        System.out.println(pikachu2);  // same address (pokemon)
+
+        System.out.println(pokemon.getHp());
+        System.out.println(pikachu2.getHp());
     }
 }
