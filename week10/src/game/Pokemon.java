@@ -34,6 +34,9 @@ public class Pokemon {
     }
 
     public void attack(Pokemon targetPokemon){
+        if (targetPokemon instanceof Pikachu){
+            System.out.println("pika pika~!");
+        }
         System.out.println(this.name + " does a attack to " + targetPokemon.name);
     }
 }
