@@ -53,4 +53,9 @@ public abstract class Pokemon extends Animation {
             System.out.println(this.name + " does a attack to " + targetPokermon.name);
         }
     }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + "[" + Integer.toHexString(hashCode()) + "]";
+    }
 }
