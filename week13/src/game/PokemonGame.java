@@ -14,7 +14,7 @@ public class PokemonGame {
         try{
             pikachu1.attack(d1);
         }catch (Exception e){
-
+            System.out.println(e.getMessage());
         }
 
         // anonymous object as parameter
